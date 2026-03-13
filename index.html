@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daglezja - Profesjonalne Usługi Ogrodnicze</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#start" class="logo" id="home-btn">
+                <img src="img/logo.png" alt="Daglezja Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#start" class="nav-link active" data-target="start">Start</a></li>
+                <li><a href="#o-nas" class="nav-link" data-target="o-nas">O nas</a></li>
+                <li><a href="#uslugi" class="nav-link" data-target="uslugi">Usługi</a></li>
+                <li><a href="#galeria" class="nav-link" data-target="galeria">Galeria</a></li>
+                <li><a href="#kontakt" class="nav-link" data-target="kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="start" class="page active">
+            <div class="hero">
+                <div class="hero-text fade-in-up">
+                    <h1>Ożywiamy Twoją przestrzeń</h1>
+                    <p class="slogan">Z pasją do natury, z precyzją w działaniu. Tworzymy ogrody, w których chce się żyć.</p>
+                    <button class="cta-button" onclick="document.querySelector('[data-target=\'uslugi\']').click()">Poznaj naszą ofertę</button>
+                </div>
+                <div class="hero-image fade-in-up delay-1">
+                    <div class="img-wrapper">
+                        <div class="img-crop-container hero-crop">
+                            <img src="img/gluwne.png" alt="Piękny ogród z trawnikiem">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="o-nas" class="page">
+            <div class="container fade-in-up">
+                <h2 class="section-title">O firmie Daglezja</h2>
+                <div class="about-content">
+                    <div class="img-wrapper">
+                        <div class="img-crop-container about-crop">
+                            <img src="img/to_ostatnie.jpg" alt="Zespół Daglezji przy pracy">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Jesteśmy zespołem doświadczonych specjalistów, dla których praca z zielenią to nie tylko zawód, ale przede wszystkim życiowa pasja. Firma <strong>Daglezja</strong> powstała z myślą o osobach, które pragną otaczać się pięknem natury, ale nie mają czasu lub narzędzi, by samodzielnie okiełznać ogrodowy chaos. Nasza misja to przekształcanie nawet najbardziej wymagających terenów w oazy spokoju i estetyki.</p>
+                        <p>Dzięki połączeniu wiedzy dendrologicznej, zmysłu artystycznego oraz nowoczesnego parku maszynowego, jesteśmy w stanie sprostać każdemu zleceniu. Działamy kompleksowo – od wizji na papierze, przez ciężkie roboty ziemne i drwalskie, aż po precyzyjne cięcia pielęgnacyjne. Wybierając Daglezję, wybierasz rzetelność, terminowość i szacunek do przyrody.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="uslugi" class="page">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Nasze Usługi</h2>
+                <p class="section-subtitle">Kompleksowe podejście do Twojego terenu. Sprawdź, w czym możemy Ci pomóc.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>🌱 Wszelkie roboty z trawnikami</h3>
+                        <p>Trawnik to fundament każdego ogrodu. Oferujemy pełne spektrum usług: badamy i przygotowujemy glebę, niwelujemy teren, wysiewamy precyzyjnie dobrane mieszanki lub rozkładamy gotowe trawniki z rolki. Przeprowadzamy profesjonalną wertykulację oraz aerację. Zajmujemy się odchwaszczaniem, nawożeniem, regeneracją zniszczonych fragmentów oraz regularnym koszeniem.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>📐 Aranżacja ogrodów</h3>
+                        <p>Tworzymy spersonalizowane aranżacje ogrodów, które odpowiadają na Twoje potrzeby. Analizujemy stanowisko, planujemy strefy relaksu, ciągi komunikacyjne oraz dobieramy roślinność. Projektujemy rabaty bylinowe, wrzosowiska i ogrody skalne. Dbamy o właściwe proporcje, dynamikę wzrostu roślin oraz ich harmonijne współżycie.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>✂️ Rzeźbienie zieleni</h3>
+                        <p>Zabiegi formujące wymagają pewnej ręki. Tworzymy skomplikowane formy przestrzenne (topiary). Prowadzimy rygorystyczne cięcia żywopłotów, nadając im idealnie równe płaszczyzny. Wykonujemy również cięcia prześwietlające i sanitarne drzew oraz krzewów, co stymuluje je do zagęszczania i obfitszego kwitnienia.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>🚜 Karczowanie i oczyszczanie terenu</h3>
+                        <p>Kupiłeś zarośniętą działkę? Przy użyciu specjalistycznego sprzętu mechanicznego i potężnych kos spalinowych, usuwamy gęste zarośla, wieloletnie chwasty i samosiejki. Oczyszczamy plac z zalegającego gruzu organicznego i przygotowujemy grunt pod nowe inwestycje, radząc sobie z trudnym ukształtowaniem terenu.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>🪓 Wycinanie drzew</h3>
+                        <p>Wykonujemy bezpieczną ścinkę drzew każdego gatunku i o każdych gabarytach. Posiadamy sprzęt do pracy w miejscach, gdzie nie ma możliwości tradycyjnego obalenia drzewa ze względu na bliskość budynków czy linii energetycznych. Służymy radą w kwestii oceny stanu drzew oraz pomocy przy pozwoleniach.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>🪵 Rębkowanie gałęzi</h3>
+                        <p>Zalegające gałęzie to problem logistyczny. Dysponujemy wydajnymi rębakami spalinowymi, które błyskawicznie zamieniają sterty konarów w użyteczną zrębkę drzewną. Powstały materiał możemy wywieźć lub pozostawić u Ciebie jako świetną ściółkę zapobiegającą parowaniu wody i wzrostowi chwastów.</p>
+                    </div>
+                    <div class="service-card" style="grid-column: 1 / -1;">
+                        <h3>⚙️ Frezowanie pni</h3>
+                        <p>Największym wyzwaniem po ścięciu drzewa jest pień. Nasze specjalistyczne frezarki mechaniczne wgryzają się w drewno, ścierając pniak zamieniając go w trociny nawet do kilkudziesięciu centymetrów poniżej poziomu gruntu. Proces ten jest bezinwazyjny dla reszty ogrodu – ubytek wystarczy zasypać ziemią i zasiać trawę.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="page">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Galeria Realizacji</h2>
+                <p class="section-subtitle">Przesuń suwak na zdjęciach, aby zobaczyć metamorfozy (Przed i Po) oraz nasze wybrane realizacje.</p>
+                
+                <div class="gallery-grid" id="gallery-ba-container" style="margin-bottom: 60px;">
+                </div>
+
+                <hr style="border: 0; border-top: 2px dashed #d1e2c4; margin-bottom: 60px;">
+
+                <div class="gallery-grid">
+                    <div class="static-gallery-item">
+                        <div class="img-wrapper">
+                            <div class="img-crop-container gallery-static-crop">
+                                <img src="img/murek.jpg" alt="Budowa estetycznych murków oporowych">
+                            </div>
+                        </div>
+                        <h4 class="gallery-title">Budowa estetycznych murków oporowych</h4>
+                    </div>
+                    <div class="static-gallery-item">
+                        <div class="img-wrapper">
+                            <div class="img-crop-container gallery-static-crop">
+                                <img src="img/plot.jpg" alt="Kompleksowa renowacja ogrodzeń i otoczenia">
+                            </div>
+                        </div>
+                        <h4 class="gallery-title">Kompleksowa renowacja ogrodzeń i otoczenia</h4>
+                    </div>
+                    <div class="static-gallery-item">
+                        <div class="img-wrapper">
+                            <div class="img-crop-container gallery-static-crop">
+                                <img src="img/prty_krzak.jpg" alt="Precyzyjne cięcia pielęgnacyjne krzewów">
+                            </div>
+                        </div>
+                        <h4 class="gallery-title">Precyzyjne cięcia pielęgnacyjne krzewów</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="page">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Porozmawiajmy o Twoim ogrodzie</h3>
+                        <p>Jesteśmy do Twojej dyspozycji. Zadzwoń lub napisz, aby umówić się na darmową wycenę.</p>
+                        <ul class="contact-list">
+                            <li><strong>📍 Adres:</strong> ul. Oddziału AK Ordona 143<br>Dąbrowa Górnicza</li>
+                            <li><strong>📞 Telefon:</strong> +48 605 218 510</li>
+                            <li><strong>✉️ E-mail:</strong> przemeklibera44@gmail.com</li>
+                            <li><strong>🕒 Godziny:</strong> Pon - Sob: 07:00 - 18:00</li>
+                        </ul>
+                        <div class="img-wrapper" style="margin-top: 30px; max-width: 250px;">
+                            <div class="img-crop-container contact-crop">
+                                <img src="img/o_nas.jpg" alt="Daglezja kontakt">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.285863814041!2d19.2619864157303!3d50.36647917946261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d10c8db421ab%3A0xc6a8b1354924c529!2sOddzia%C5%82u%20AK%20Ordona%20143%2C%20D%C4%85browa%20G%C3%B3rnicza!5e0!3m2!1spl!2spl!4v1689000000000!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <h3>Gotowy na zieloną rewolucję?</h3>
+                <p>Niezależnie od wielkości zlecenia, chętnie pomożemy. Skontaktuj się z nami już dziś.</p>
+                <button class="cta-button" onclick="document.querySelector('[data-target=\'kontakt\']').click()">Zadzwoń: 605 218 510</button>
+            </div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Daglezja Logo" class="footer-logo-img">
+                    <p>Eksperci od terenów zielonych.</p>
+                </div>
+                <div class="footer-contact-details">
+                    <p>+48 605 218 510</p>
+                    <p>przemeklibera44@gmail.com</p>
+                    <p style="font-size: 0.9rem; margin-top: 5px;">Dąbrowa Górnicza</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Daglezja. Wszelkie prawa zastrzeżone. Firma z pasją do natury.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
