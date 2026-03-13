@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
     const homeBtn = document.getElementById('home-btn');
+    const hamburger = document.getElementById('hamburger');
+    const navMenuElement = document.getElementById('nav-menu');
+
+    // Obsługa kliknięcia w Hamburger
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenuElement.classList.toggle('active');
+    });
 
     function navigateTo(targetId) {
         pages.forEach(page => page.classList.remove('active'));
@@ -17,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const activeLink = document.querySelector(`.nav-link[data-target="${targetId}"]`);
         if(activeLink) { activeLink.classList.add('active'); }
+
+        // Zwijanie menu mobilnego po kliknięciu
+        hamburger.classList.remove('active');
+        navMenuElement.classList.remove('active');
     }
 
     navLinks.forEach(link => {
